@@ -5,4 +5,4 @@
   tasks:
     - name: filter
       ansible.builtin.debug:
-         msg: "{{ CONTENT | split('\n') | regex_findall('Drink.*$') }}"
+         msg: "{{ CONTENT | split('\n') | regex_findall('Drink(.*)$') }}"
